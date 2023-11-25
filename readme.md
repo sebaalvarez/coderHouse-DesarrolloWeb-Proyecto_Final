@@ -1,6 +1,6 @@
-**_ PROYECTO FINAL _**
+# PROYECTO FINAL
 
-# Primera entrega:
+1º Primera entrega:
 
 Consigna:
 
