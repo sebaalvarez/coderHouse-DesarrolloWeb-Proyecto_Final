@@ -17,9 +17,10 @@ Consigna:
   ***
 
 - CSS:
+
   - Crear un estilo inicial: comenzar a darle estilo básico a la web.
 
-#########
+  ***
 
 A continuación se adjuntan los links para poder ver el Wiregrame/prototipo realizado con Figma:
 
