@@ -22,7 +22,7 @@ Consigna:
 
   ***
 
-A continuación se adjuntan los links para poder ver el Wiregrame/prototipo realizado con Figma:
+A continuación se adjuntan los links para poder ver el Wireframe/prototipo realizado con Figma:
 
 Desktop: https://www.figma.com/proto/YozMBF71kpCd0fd9vHKRLW/HB?page-id=0%3A1&type=design&node-id=7-171&viewport=339%2C430%2C0.12&t=FoACjpq4xeO5Dkru-1&scaling=scale-down
 
