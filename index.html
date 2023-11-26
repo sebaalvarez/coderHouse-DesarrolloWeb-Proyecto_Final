@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="cabecera">
-    <img src="./imagenes/logo-hb.webp" alt="logo-hb">
+    <img src="./imagenes/logo-hb.webp" width="50" height="50" alt="logo-hb">
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -25,12 +25,13 @@
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section>
+    <section class="hero">
       <img src="./imagenes/hero-inicio.jpg" alt="Foto de Inicio">
       <h1>Nombre de la Empresa</h1>
       <p>Descripción adicional</p>
       <a href="./pages/contacto.html"> contactanos</a>
     </section>
+
 
     <!-- SERVICIOS -->
     <section>
@@ -133,7 +134,15 @@
       </div>
       <div>
         <h3>Envíanos un mensaje</h3>
-        <form action=""></form>
+        <form action="">
+          <label for="nombre">nombre</label>
+          <input id="nombre" type="text">
+          <label for="mail">E-Mail</label>
+          <input id="mail" type="email">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <button>Enviar</button>
+        </form>
       </div>
 
 
@@ -142,8 +151,8 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
-
+  <footer class="footer">
+    <p>Powered By AGpro Consulting</p>
   </footer>
 
 </body>

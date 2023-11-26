@@ -9,10 +9,22 @@
   align-items: center;
   justify-content: space-between;
   background-color: darkgray;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkgray;
   padding: 20px;
 }
 
 nav li {
   display: inline-block;
   margin: 20px;
+}
+
+.hero {
+  width: 100%;
 }
