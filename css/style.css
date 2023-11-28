@@ -8,6 +8,20 @@ body {
   background-color: #fff;
 }
 
+img {
+  max-width: 150px;
+}
+
+.contenedorBody {
+  padding: 0px 100px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/**** HEADER ****/
 .cabecera {
   background-color: darkgray;
   position: sticky;
@@ -46,14 +60,12 @@ li .a:visited {
 
 li a:hover {
   background-color: #fff;
+  border-radius: 20px;
   padding: 10px 0px;
 }
+/**** FIN HEADER ****/
 
-h1,
-h2 {
-  text-align: center;
-}
-
+/**** FOOTER ****/
 footer {
   text-align: center;
   background-color: black;
@@ -68,7 +80,9 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+/**** FIN FOOTER ****/
 
+/**** HERO ****/
 .hero {
   border: 0.5px solid black;
   width: 100%;
@@ -91,6 +105,11 @@ footer {
   background-size: cover;
 }
 
+.imgNoticias {
+  background-image: url(../imagenes/hero-noticias.jpg);
+  background-size: cover;
+}
+
 .imgContacto {
   background-image: url(../imagenes/hero-contacto.jpg);
   background-size: cover;
@@ -107,14 +126,7 @@ footer {
   display: block;
   text-align: center;
 }
-
-img {
-  max-width: 150px;
-}
-
-.contenedorBody {
-  padding: 0px 100px;
-}
+/**** FIN HERO ****/
 
 .servicioSectionP {
   text-align: center;
@@ -197,7 +209,6 @@ img {
 }
 
 .clientesSection {
-  /* background-color: rgb(211, 211, 211); */
   margin-top: 20px;
   padding-top: 20px;
 }
@@ -214,7 +225,7 @@ img {
   padding: 20px 0px 0px 0px;
 }
 
-.contactoFrame {
+.contactoMap {
   width: 80%;
   height: 350px;
   padding: 20px;
@@ -252,7 +263,6 @@ img {
 }
 
 .contactoForm h3 {
-  padding: 0px;
   text-align: center;
 }
 
