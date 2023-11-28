@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="cabecera">
-    <img src="./imagenes/logo-hb.webp" width="50" height="50" alt="logo-hb">
-    <nav>
+    <a class="logo" href="./index.html">
+      <img src=" ./imagenes/logo-hb.webp" width="50px" height="50px" alt="logo-hb">
+    </a>
+
+    <nav class="menu">
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="./pages/nosotros.html">Nosotros</a></li>
@@ -25,134 +29,157 @@
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <img src="./imagenes/hero-inicio.jpg" alt="Foto de Inicio">
+    <div class="hero imgInicio">
       <h1>Nombre de la Empresa</h1>
       <p>Descripción adicional</p>
       <a href="./pages/contacto.html"> contactanos</a>
-    </section>
+    </div>
+
+    <div class="contenedorBody">
+
+      <!-- SERVICIOS -->
+      <section class="servicioSection">
+        <h2>Servicios</h2>
+        <p class="servicioSectionP">Los servicios que prestamos son desarrollados aplicando el concepto de servicio a
+          medida. Los mismos son diseñados en forma específica para cada cliente, adecuándolos a sus necesidades y
+          características particulares.</p>
+
+        <div class="serviciosInicio">
+
+          <div class="serviciosArticleImg">
+            <img src="./imagenes/serv-auditoriaLaboral.jpg" alt="Auditoria Laboral">
+          </div>
+          <div class="serviciosArticleTextoIzq">
+            <h3>Auditoría Laboral</h3>
+            <p>Las empresas deben controlar a través de auditorías laborales el correcto cumplimiento de la
+              legislación laboral en materia de liquidaciones de nóminas o salarios, además del apego a todas las
+              formalidades que la legislación exige.</p>
+            <a href="./pages/servicios.html">Leer más...</a>
+          </div>
 
 
-    <!-- SERVICIOS -->
-    <section>
-      <h2>Servicios</h2>
-      <p>Los servicios que prestamos son desarrollados aplicando el concepto de servicio a medida. Los mismos son
-        diseñados en
-        forma específica para cada cliente, adecuándolos a sus necesidades y características particulares.</p>
-      <div>
-        <article><img src="./imagenes/serv-auditoriaLaboral.jpg" alt="Auditoria Laboral">
-          <h3>Auditoría Laboral</h3>
-          <p>Las empresas deben controlar a través de auditorías laborales el correcto cumplimiento de la legislación
-            laboral en
-            materia de liquidaciones de nóminas o salarios, además del apego a todas las formalidades que la legislación
-            exige.</p>
-          <a href="./pages/servicios.html">Leer más...</a>
-        </article>
 
-        <article><img src="./imagenes/serv-gestionContratistas.jpg" alt="Gestión de Contratistas">
-          <h3>Gestión de Contratistas</h3>
-          <p>Controle y gestione la información de sus contratistas en una única plataforma diseñada de acuerdo a las
-            «best
-            practices» internacionales.</p>
-          <a href="./pages/servicios.html">Leer más...</a>
-        </article>
-
-        <article><img src="./imagenes/serv-analisisEmpresas.jpg" alt="Análisis de Empresas">
-          <h3>Análisis de Empresas</h3>
-          <p>Este servicio permite analizar si el oferente tiene la capacidad financiera y económica de hacer frente al
-            contrato.
-            Contamos con bases de datos de comportamiento crediticios en Argentina y en el Exterior.</p>
-          <a href="./pages/servicios.html">Leer más...</a>
-        </article>
-
-        <article><img src="./imagenes/serv-analisisPolinomicas.jpg" alt="Análisis de Polinomicas">
-          <h3>Análisis de Polinómicas</h3>
-          <p>Con metodologías se analizan los antecedentes de los contratos, sus precios base, los índices aplicables y
-            la
-            metodología correcta de calculo de las polinómicas de ajustes de precios.</p>
-          <a href="./pages/servicios.html">Leer más...</a>
-        </article>
-        <a href="./pages/servicios.html">más servicios...</a>
-      </div>
-    </section>
-
-    <!-- EXTRACTO -->
-    <section>
-      <div>
-        <span>Somos una firma regional, en plena expansión y crecimiento; acompañamos a nuestros clientes, tanto en el
-          territorio de
-          la República Argentina, como en el Mercosur y nos comprometemos con su éxito, a través de la adaptabilidad de
-          los
-          servicios a las necesidades de cada uno</span>
-      </div>
-    </section>
-
-    <!-- EQUIPO DE TRABAJO -->
-    <section>
-      <h2>Equipo de Trabajo</h2>
-      <div>
-        <img src="./imagenes/e-marcelo.jpg" alt="Marcelo Hubaide">
-        <h3>Marcelo Hubaide</h3>
-        <p>Socio Fundador</p>
-
-        <img src="./imagenes/e-hugo.jpg" alt="Hugo Böhm">
-        <h3>Hugo Böhm</h3>
-        <p>Socio Fundador</p>
-
-        <img src="./imagenes/e-marta.jpeg" alt="Marta Mendoza">
-        <h3>Marta Mendoza</h3>
-        <p>Gerente de Impuestos</p>
-
-        <img src="./imagenes/e-carina.png" alt="Carina Mendía">
-        <h3>Carina Mendía</h3>
-        <p>Resp. Auditoría Externa</p>
-      </div>
-    </section>
-
-    <!-- NUESTROS CLIENTES -->
-    <section>
-      <h2>Nuestros Clientes</h2>
-      <img src="./imagenes/logo-ganfeng.jpg" alt="ganfeng">
-      <img src="./imagenes/logo-hanaq.png" alt="hanaq">
-      <img src="./imagenes/logo-scania.jpg" alt="scania">
-      <img src="./imagenes/logo-sheraton.jpg" alt="sheraton">
-      <img src="./imagenes/logo-tecnograf.jpg" alt="tecnograf">
-    </section>
-
-    <!-- CONTACTOS -->
-    <section>
-      <h2>Contacto</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3173798690173!2d-65.42081872437817!3d-24.784583507668838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b73bce3f81%3A0xc30cdf5cd34f1edb!2sSantiago%20del%20Estero%201173%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1700958293848!5m2!1ses-419!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div>
-        <p>Santiago del Estero nº 1173
-          Salta, Argentina.</p>
-        <p>+54 387 4216750</p>
-        <p>info@hubaidebohm.com.ar</p>
-      </div>
-      <div>
-        <h3>Envíanos un mensaje</h3>
-        <form action="">
-          <label for="nombre">nombre</label>
-          <input id="nombre" type="text">
-          <label for="mail">E-Mail</label>
-          <input id="mail" type="email">
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-          <button>Enviar</button>
-        </form>
-      </div>
+          <div class="serviciosArticleTextoDer">
+            <h3>Gestión de Contratistas</h3>
+            <p>Controle y gestione la información de sus contratistas en una única plataforma diseñada de acuerdo a las
+              «best practices» internacionales.</p>
+            <a href="./pages/servicios.html">Leer más...</a>
+          </div>
+          <div class="serviciosArticleImg">
+            <img src="./imagenes/serv-gestionContratistas.jpg" alt="Gestión de Contratistas">
+          </div>
 
 
-    </section>
+          <div class="serviciosArticleImg">
+            <img src="./imagenes/serv-analisisEmpresas.jpg" alt="Análisis de Empresas">
+          </div>
+          <div class="serviciosArticleTextoIzq">
+            <h3>Análisis de Empresas</h3>
+            <p>Este servicio permite analizar si el oferente tiene la capacidad financiera y económica de hacer frente
+              al contrato. Contamos con bases de datos de comportamiento crediticios en Argentina y en el Exterior.</p>
+            <a href="./pages/servicios.html">Leer más...</a>
+          </div>
 
+
+          <div class="serviciosArticleTextoDer">
+            <h3>Análisis de Polinómicas</h3>
+            <p>Con metodologías se analizan los antecedentes de los contratos, sus precios base, los índices
+              aplicables y la metodología correcta de calculo de las polinómicas de ajustes de precios.</p>
+
+            <a href="./pages/servicios.html">Leer más...</a>
+          </div>
+          <div class="serviciosArticleImg">
+            <img src="./imagenes/serv-analisisPolinomicas.jpg" alt="Análisis de Polinomicas">
+          </div>
+          <a class="btnMoreService" href="./pages/servicios.html">más servicios...</a>
+        </div>
+      </section>
+
+      <!-- EXTRACTO -->
+      <section class="extractoSection">
+        <div>
+          <span>Somos una firma regional, en plena expansión y crecimiento; acompañamos a nuestros clientes, tanto en el
+            territorio de
+            la República Argentina, como en el Mercosur y nos comprometemos con su éxito, a través de la adaptabilidad
+            de
+            los
+            servicios a las necesidades de cada uno</span>
+        </div>
+      </section>
+
+      <!-- EQUIPO DE TRABAJO -->
+      <section class="equipoSection">
+        <h2>Equipo de Trabajo</h2>
+        <div class="equipoCard">
+          <img class="equipoCardImg" src="./imagenes/e-marcelo.jpg" alt="Marcelo Hubaide">
+          <h3>Marcelo Hubaide</h3>
+          <p>Socio Fundador</p>
+        </div>
+        <div class="equipoCard">
+          <img class="equipoCardImg" src="./imagenes/e-hugo.jpg" alt="Hugo Böhm">
+          <h3>Hugo Böhm</h3>
+          <p>Socio Fundador</p>
+        </div>
+        <div class="equipoCard">
+          <img class="equipoCardImg" src="./imagenes/e-marta.jpeg" alt="Marta Mendoza">
+          <h3>Marta Mendoza</h3>
+          <p>Gerente de Impuestos</p>
+        </div>
+        <div class="equipoCard">
+          <img class="equipoCardImg" src="./imagenes/e-carina.png" alt="Carina Mendía">
+          <h3>Carina Mendía</h3>
+          <p>Resp. Auditoría Externa</p>
+        </div>
+      </section>
+
+      <!-- NUESTROS CLIENTES -->
+      <section class="clientesSection">
+        <h2>Nuestros Clientes</h2>
+        <img class="clientesLogo" src="./imagenes/logo-ganfeng.jpg" alt="ganfeng">
+        <img class="clientesLogo" src="./imagenes/logo-hanaq.png" alt="hanaq">
+        <img class="clientesLogo" src="./imagenes/logo-scania.jpg" alt="scania">
+        <img class="clientesLogo" src="./imagenes/logo-sheraton.jpg" alt="sheraton">
+        <img class="clientesLogo" src="./imagenes/logo-tecnograf.jpg" alt="tecnograf">
+      </section>
+
+      <!-- CONTACTOS -->
+      <section class="contactoSection">
+        <h2>Contacto</h2>
+        <iframe class="contactoFrame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3173798690173!2d-65.42081872437817!3d-24.784583507668838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b73bce3f81%3A0xc30cdf5cd34f1edb!2sSantiago%20del%20Estero%201173%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1700958293848!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contactoFooter">
+          <div class="contactoInfo">
+            <p>Santiago del Estero nº 1173
+              Salta, Argentina.</p>
+            <p>+54 387 4216750</p>
+            <p>info@hubaidebohm.com.ar</p>
+          </div>
+
+          <div class="contactoForm">
+            <h3>Envíanos un mensaje</h3>
+            <form action="">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text">
+              <label for="mail">E-Mail</label>
+              <input id="mail" type="email">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+              <input class="btnPrimary" type="submit">
+            </form>
+          </div>
+        </div>
+
+
+      </section>
+
+    </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <p>Powered By AGpro Consulting</p>
+  <footer>
+    <p>Powered By <a class="footerA" href="https://www.agpro.com.ar" target="_blank"> AGpro Consulting</a></p>
   </footer>
 
 </body>

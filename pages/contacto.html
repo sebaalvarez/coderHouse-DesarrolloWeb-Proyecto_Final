@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="cabecera">
-    <img src="../imagenes/logo-hb.webp" width="50" height="50" alt="logo-hb">
+    <a class="logo" href="../index.html">
+      <img src=" ../imagenes/logo-hb.webp" width="50px" height="50px" alt="logo-hb">
+    </a>
     <nav class="menu">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
@@ -25,36 +28,49 @@
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section>
-      <img id="hero" src="../imagenes/hero-contacto.jpg" alt="Contacto">
+    <div class="hero imgContacto">
       <h1>Contacto</h1>
+    </div>
 
-    </section>
+    <div class="contenedorBody">
+      <!-- CONTACTO -->
+      <section class="contactoSection">
 
-    <!-- CONTACTO -->
-    <section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3173798690173!2d-65.42081872437817!3d-24.784583507668838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b73bce3f81%3A0xc30cdf5cd34f1edb!2sSantiago%20del%20Estero%201173%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1700958293848!5m2!1ses-419!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div>
-        <p>Santiago del Estero nº 1173
-          Salta, Argentina.</p>
-        <p>+54 387 4216750</p>
-        <p>info@hubaidebohm.com.ar</p>
-      </div>
-      <div>
-        <h3>Envíanos un mensaje</h3>
-        <form action=""></form>
-      </div>
+        <iframe class="contactoFrame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3173798690173!2d-65.42081872437817!3d-24.784583507668838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b73bce3f81%3A0xc30cdf5cd34f1edb!2sSantiago%20del%20Estero%201173%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1700958293848!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contactoFooter">
+          <div class="contactoInfo">
+            <p>Santiago del Estero nº 1173
+              Salta, Argentina.</p>
+            <p>+54 387 4216750</p>
+            <p>info@hubaidebohm.com.ar</p>
+          </div>
+
+          <div class="contactoForm">
+            <h3>Envíanos un mensaje</h3>
+            <form action="">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text">
+              <label for="mail">E-Mail</label>
+              <input id="mail" type="email">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+              <input class="btnPrimary" type="submit">
+            </form>
+          </div>
+        </div>
 
 
-    </section>
+      </section>
+
+    </div>
   </main>
 
   <!-- FOOTER -->
   <footer>
-
+    <p>Powered By <a class="footerA" href="https://www.agpro.com.ar" target="_blank"> AGpro Consulting</a></p>
   </footer>
 </body>
 

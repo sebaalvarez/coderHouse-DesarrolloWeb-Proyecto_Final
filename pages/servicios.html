@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="cabecera">
-    <img src="../imagenes/logo-hb.webp" width="50" height="50" alt="logo-hb">
-    <nav>
+    <a class="logo" href="../index.html">
+      <img src=" ../imagenes/logo-hb.webp" width="50px" height="50px" alt="logo-hb">
+    </a>
+    <nav class="menu">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./nosotros.html">Nosotros</a></li>
@@ -25,144 +28,153 @@
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <img src="../imagenes/hero-servicios.jpg" alt="Servicios">
+    <div class="hero imgServicios">
       <h1>Servicios</h1>
-    </section>
+    </div>
 
-    <!-- SERVICIOS -->
-    <section>
-      <div>
-        <h2>Auditoría Laboral</h2>
+    <div class="contenedorBody">
+
+      <!-- SERVICIOS -->
+      <section>
         <div>
-          <img src="../imagenes/serv-auditoriaLaboral.jpg" alt="Auditoria Laboral">
-          <p>La Ley de Contrato de Trabajo (LTC) Art 30 en Argentina establece la responsabilidad solidaria cuando se
-            produce la tercerización de trabajos que por sí misma debería realizar la empresa contratante y que por
-            decisión de esta la ejecuta
-            recurriendo a la tercerización de esos servicios. Existe abundante jurisprudencia de casos en donde se
-            determinó la
-            solidaridad entre la empresa contratante y la empresa contratistas y sus subcontratistas. Por esta razón, a
-            nuestro
-            criterio profesional, deben las empresas controlar a través de auditorías laborales el correcto cumplimiento
-            de la
-            legislación laboral en materia de liquidaciones de nóminas o salarios, además del apego a todas las
-            formalidades que la legislación exige. Estas auditorías deben ser aleatorias y periódicas en todos los
-            contratos, sin distinción, de manera de minimizar las contingencias que se producirían para la empresa
-            contratante.</p>
-          <hr>
+          <h2>Auditoría Laboral</h2>
+          <div>
+            <img src="../imagenes/serv-auditoriaLaboral.jpg" alt="Auditoria Laboral">
+            <p>La Ley de Contrato de Trabajo (LTC) Art 30 en Argentina establece la responsabilidad solidaria cuando se
+              produce la tercerización de trabajos que por sí misma debería realizar la empresa contratante y que por
+              decisión de esta la ejecuta
+              recurriendo a la tercerización de esos servicios. Existe abundante jurisprudencia de casos en donde se
+              determinó la
+              solidaridad entre la empresa contratante y la empresa contratistas y sus subcontratistas. Por esta razón,
+              a
+              nuestro
+              criterio profesional, deben las empresas controlar a través de auditorías laborales el correcto
+              cumplimiento
+              de la
+              legislación laboral en materia de liquidaciones de nóminas o salarios, además del apego a todas las
+              formalidades que la legislación exige. Estas auditorías deben ser aleatorias y periódicas en todos los
+              contratos, sin distinción, de manera de minimizar las contingencias que se producirían para la empresa
+              contratante.</p>
+            <hr>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2>Gestión de Contratistas</h2>
         <div>
-          <img src="../imagenes/serv-gestionContratistas.jpg" alt="Gestión de Contratistas">
-          <p>Controle y gestione la información de sus contratistas en una única plataforma diseñada de acuerdo a las
-            «best
-            practices» internacionales. Esta herramienta es completamente parametrizable de acuerdo a sus necesidades
-            independientemente del tamaño de su empresa.</p>
-          <hr>
+          <h2>Gestión de Contratistas</h2>
+          <div>
+            <img src="../imagenes/serv-gestionContratistas.jpg" alt="Gestión de Contratistas">
+            <p>Controle y gestione la información de sus contratistas en una única plataforma diseñada de acuerdo a las
+              «best
+              practices» internacionales. Esta herramienta es completamente parametrizable de acuerdo a sus necesidades
+              independientemente del tamaño de su empresa.</p>
+            <hr>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2>Análisis de Empresas</h2>
         <div>
-          <img src="../imagenes/serv-analisisEmpresas.jpg" alt="Análisis de Empresas">
-          <p>En los procesos de compras o licitaciones, los sectores de contratos de las empresas permanente analizan
-            ofertas de una
-            innumerable cantidad de empresas oferentes. En este proceso tiene bajo su análisis las ofertas y los
-            antecedentes de las
-            empresas oferentes. Este servicio permite además analizar si el oferente tiene la capacidad financiera y
-            económica de
-            hacer frente al contrato. Contamos con bases de datos de comportamiento crediticios en Argentina y en el
-            Exterior.
-            Nuestros profesionales analizan estudian sus balances e información financieras de manera de brindar a la
-            empresa ratios
-            de sus principales variables económicas-financieras otorgando puntajes para medir el real estado de los
-            oferentes. Estos
-            informes permiten a las empresas contratantes evaluar a sus proveedores previo al otorgamiento de contratos
-            evitando de
-            esta manera adjudicar obras-servicios-bienes a empresas con dificultades financieras.</p>
-          <hr>
+          <h2>Análisis de Empresas</h2>
+          <div>
+            <img src="../imagenes/serv-analisisEmpresas.jpg" alt="Análisis de Empresas">
+            <p>En los procesos de compras o licitaciones, los sectores de contratos de las empresas permanente analizan
+              ofertas de una
+              innumerable cantidad de empresas oferentes. En este proceso tiene bajo su análisis las ofertas y los
+              antecedentes de las
+              empresas oferentes. Este servicio permite además analizar si el oferente tiene la capacidad financiera y
+              económica de
+              hacer frente al contrato. Contamos con bases de datos de comportamiento crediticios en Argentina y en el
+              Exterior.
+              Nuestros profesionales analizan estudian sus balances e información financieras de manera de brindar a la
+              empresa ratios
+              de sus principales variables económicas-financieras otorgando puntajes para medir el real estado de los
+              oferentes. Estos
+              informes permiten a las empresas contratantes evaluar a sus proveedores previo al otorgamiento de
+              contratos
+              evitando de
+              esta manera adjudicar obras-servicios-bienes a empresas con dificultades financieras.</p>
+            <hr>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2>Análisis de Polinómicas</h2>
         <div>
-          <img src="../imagenes/serv-analisisPolinomicas.jpg" alt="Análisis de Polinómicas">
-          <p>En un contexto inflacionario tener bajo procedimiento el calculo de los ajustes de precios recurrentes de
-            los contratos
-            es un tema muy sensible. Con metodologías se analizan los antecedentes de los contratos, sus precios base,
-            los índices
-            aplicables y la metodología correcta de calculo de las polinómicas de ajustes de precios. Existen contratos
-            en dólares
-            ajustados por factores de correcciones de índices en precios, análisis de convenios colectivos de trabajos,
-            índices
-            aplicables sobre estructuras de costos, análisis de distintas opciones de polinómicas de ajustes de precios
-            de distintas
-            ofertas recibidas, los cuales deben ser analizadas con un criterio técnico muy preciso, depurado y
-            confiable. Nuestro
-            servicio tiende a lograr transparencia en los procesos de ajustes de precios, de manera de logar que las
-            partes
-            (contratante y proveedor) respeten y acepten el criterio profesional sobre bases técnicas y transparentes.
-            En muchos
-            casos nuestros servicios se emplean para capacitar a los contratistas a aplicar de manera correcta con
-            metodología
-            logrando que este proceso, muchas veces conflictivo, se transforme en normal y en un entorno de respeto
-            mutuo.</p>
-          <hr>
+          <h2>Análisis de Polinómicas</h2>
+          <div>
+            <img src="../imagenes/serv-analisisPolinomicas.jpg" alt="Análisis de Polinómicas">
+            <p>En un contexto inflacionario tener bajo procedimiento el calculo de los ajustes de precios recurrentes de
+              los contratos
+              es un tema muy sensible. Con metodologías se analizan los antecedentes de los contratos, sus precios base,
+              los índices
+              aplicables y la metodología correcta de calculo de las polinómicas de ajustes de precios. Existen
+              contratos
+              en dólares
+              ajustados por factores de correcciones de índices en precios, análisis de convenios colectivos de
+              trabajos,
+              índices
+              aplicables sobre estructuras de costos, análisis de distintas opciones de polinómicas de ajustes de
+              precios
+              de distintas
+              ofertas recibidas, los cuales deben ser analizadas con un criterio técnico muy preciso, depurado y
+              confiable. Nuestro
+              servicio tiende a lograr transparencia en los procesos de ajustes de precios, de manera de logar que las
+              partes
+              (contratante y proveedor) respeten y acepten el criterio profesional sobre bases técnicas y transparentes.
+              En muchos
+              casos nuestros servicios se emplean para capacitar a los contratistas a aplicar de manera correcta con
+              metodología
+              logrando que este proceso, muchas veces conflictivo, se transforme en normal y en un entorno de respeto
+              mutuo.</p>
+            <hr>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2>Asesoramiento Tributario</h2>
         <div>
-          <img src="../imagenes/serv-asesoria-tributaria.jpg" alt="Asesoramiento Tributario">
-          <p>Nuestro departamento de Asesoramiento Tributario está compuesto por un grupo de consultores áltamente
-            capacitados en los
-            distintos campos que abarca la práctica impositiva. Podemos informar rápidamente sobre los cambios que se
-            producen y
-            también brindamos esquemas tendientes a optimizar la carga impositiva.
-            Nos especializamos en:</p>
-          <ul>
-            <li>Auditorías fiscales (Soluciones para reducir la carga fiscal)</li>
-            <li>Asistencia a letrados patrocinantes en temas fiscales</li>
-            <li>Contestación de requerimientos</li>
-            <li>Diagnóstico y planeamiento impositivo</li>
-            <li>Preparación y/o revisión de Declaraciones Juradas</li>
-          </ul>
+          <h2>Asesoramiento Tributario</h2>
+          <div>
+            <img src="../imagenes/serv-asesoria-tributaria.jpg" alt="Asesoramiento Tributario">
+            <p>Nuestro departamento de Asesoramiento Tributario está compuesto por un grupo de consultores áltamente
+              capacitados en los
+              distintos campos que abarca la práctica impositiva. Podemos informar rápidamente sobre los cambios que se
+              producen y
+              también brindamos esquemas tendientes a optimizar la carga impositiva.
+              Nos especializamos en:</p>
+            <ul>
+              <li>Auditorías fiscales (Soluciones para reducir la carga fiscal)</li>
+              <li>Asistencia a letrados patrocinantes en temas fiscales</li>
+              <li>Contestación de requerimientos</li>
+              <li>Diagnóstico y planeamiento impositivo</li>
+              <li>Preparación y/o revisión de Declaraciones Juradas</li>
+            </ul>
 
-          <hr>
+            <hr>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2>Consulting</h2>
         <div>
-          <img src="../imagenes/serv-auditoriaLaboral2.jpg" alt="Consulting">
-          <p>Los servicios están orientados a modelar los cambios que enfrentan actualmente las empresas. La base de la
-            Consultoría
-            está en comprender adecuadamente la Cultura de cada organización, así como también sus necesidades y
-            objetivos.
-            Nos especializamos en:</p>
-          <ul>
-            <li>Consultoría de organización</li>
-            <li>Planeamiento estratégico de sistemas</li>
-            <li>Rediseño de procesos</li>
-            <li>Selección e implementación de sistemas verticales</li>
-          </ul>
+          <h2>Consulting</h2>
+          <div>
+            <img src="../imagenes/serv-auditoriaLaboral2.jpg" alt="Consulting">
+            <p>Los servicios están orientados a modelar los cambios que enfrentan actualmente las empresas. La base de
+              la
+              Consultoría
+              está en comprender adecuadamente la Cultura de cada organización, así como también sus necesidades y
+              objetivos.
+              Nos especializamos en:</p>
+            <ul>
+              <li>Consultoría de organización</li>
+              <li>Planeamiento estratégico de sistemas</li>
+              <li>Rediseño de procesos</li>
+              <li>Selección e implementación de sistemas verticales</li>
+            </ul>
 
-          <hr>
+            <hr>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <!-- FOOTER -->
   <footer>
-
+    <p>Powered By <a class="footerA" href="https://www.agpro.com.ar" target="_blank"> AGpro Consulting</a></p>
   </footer>
 </body>
 

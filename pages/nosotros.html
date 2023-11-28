@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="cabecera">
-    <img src="../imagenes/logo-hb.webp" width="50" height="50" alt="logo-hb">
-    <nav>
+    <a class="logo" href="../index.html">
+      <img src=" ../imagenes/logo-hb.webp" width="50px" height="50px" alt="logo-hb">
+    </a>
+    <nav class="menu">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./nosotros.html">Nosotros</a></li>
@@ -25,12 +28,11 @@
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section>
-
-      <img id="hero" src="../imagenes/hero-nosotros.jpg" alt="Nosotros">
+    <div class="hero imgNosotros">
       <h1>Nosotros</h1>
+    </div>
 
-
+    <div class="contenedorBody">
       <p>Hubaide-Böhm y Asociados fue creado en la ciudad de Salta en 1992, con el objetivo de brindar servicios
         profesionales de
         Auditoría, Asesoramiento y Consultoría con los más altos estándares de excelencia. Brindamos servicios de
@@ -38,58 +40,58 @@
         uniforme y de manera coordinada. Nuestros consultores, tiene responsabilidad directa en cada proyecto que
         emprenden y
         cuentan con probada experiencia en sus áreas de actuación.</p>
-    </section>
 
-    <!-- EQUIPO DE TRABAJO -->
-    <section>
-      <div>
-        <img src="../imagenes/e-marcelo.jpg" alt="Marcelo Hubaide">
-        <h3>Marcelo Hubaide</h3>
-        <p>Socio Fundador</p>
-        <p>mhubaide@hubaidebohm.com.ar</p>
-        <p>Contador Público graduado en la Universidad Nacional de Tucumán en 1989 y socio fundador de la firma.
-          Especializado enel área Contable-Impositiva.</p>
-        <h4>+ Experiencia previa</h4>
-        <h4>+ Post-grados</h4>
-      </div>
 
-      <div>
-        <img src="../imagenes/e-hugo.jpg" alt="Hugo Böhm">
-        <h3>Hugo Böhm</h3>
-        <p>Socio Fundador</p>
-        <p>hugobohm@hubaidebohm.com.ar</p>
-        <p>Contador público graduado en la Universidad Nacional de Tucumán en 1989 y socio fundador de la firma.</p>
-        <h4>+ Experiencia previa</h4>
-        <h4>+ Post-grados</h4>
-      </div>
+      <!-- EQUIPO DE TRABAJO -->
+      <section>
+        <div>
+          <img src="../imagenes/e-marcelo.jpg" alt="Marcelo Hubaide">
+          <h3>Marcelo Hubaide</h3>
+          <p>Socio Fundador</p>
+          <p>mhubaide@hubaidebohm.com.ar</p>
+          <p>Contador Público graduado en la Universidad Nacional de Tucumán en 1989 y socio fundador de la firma.
+            Especializado enel área Contable-Impositiva.</p>
+          <h4>+ Experiencia previa</h4>
+          <h4>+ Post-grados</h4>
+        </div>
 
-      <div>
-        <img src="../imagenes/e-marta.jpeg" alt="Marta Mendoza">
-        <h3>Marta Mendoza</h3>
-        <p>Gerente de Impuestos</p>
-        <p>mmendoza@hubaidebohm.com.ar</p>
-        <p>Licenciada en Administración de Empresas, graduada de la Universidad Nacional de Salta en el año 1993; y
-          Contadora Pública graduada de la Universidad Nacional de Salta en el año 2000.</p>
-        <h4>+ Experiencia previa</h4>
-        <h4>+ Post-grados</h4>
-      </div>
+        <div>
+          <img src="../imagenes/e-hugo.jpg" alt="Hugo Böhm">
+          <h3>Hugo Böhm</h3>
+          <p>Socio Fundador</p>
+          <p>hugobohm@hubaidebohm.com.ar</p>
+          <p>Contador público graduado en la Universidad Nacional de Tucumán en 1989 y socio fundador de la firma.</p>
+          <h4>+ Experiencia previa</h4>
+          <h4>+ Post-grados</h4>
+        </div>
 
-      <div>
-        <img src="../imagenes/e-carina.png" alt=" Carina Mendía">
-        <h3>Carina Mendía</h3>
-        <p>Responsable de Auditoría Externa</p>
-        <p>cmendia@hubaidebohm.com.ar</p>
-        <p>Contadora pública nacional, graduada en el año 2007. Especializada en el área de auditoría Externa.</p>
-        <h4>+ Experiencia previa</h4>
-        <h4>+ Post-grados</h4>
-      </div>
-    </section>
+        <div>
+          <img src="../imagenes/e-marta.jpeg" alt="Marta Mendoza">
+          <h3>Marta Mendoza</h3>
+          <p>Gerente de Impuestos</p>
+          <p>mmendoza@hubaidebohm.com.ar</p>
+          <p>Licenciada en Administración de Empresas, graduada de la Universidad Nacional de Salta en el año 1993; y
+            Contadora Pública graduada de la Universidad Nacional de Salta en el año 2000.</p>
+          <h4>+ Experiencia previa</h4>
+          <h4>+ Post-grados</h4>
+        </div>
 
+        <div>
+          <img src="../imagenes/e-carina.png" alt=" Carina Mendía">
+          <h3>Carina Mendía</h3>
+          <p>Responsable de Auditoría Externa</p>
+          <p>cmendia@hubaidebohm.com.ar</p>
+          <p>Contadora pública nacional, graduada en el año 2007. Especializada en el área de auditoría Externa.</p>
+          <h4>+ Experiencia previa</h4>
+          <h4>+ Post-grados</h4>
+        </div>
+      </section>
+    </div>
   </main>
 
   <!-- FOOTER -->
   <footer>
-
+    <p>Powered By <a class="footerA" href="https://www.agpro.com.ar" target="_blank"> AGpro Consulting</a></p>
   </footer>
 </body>
 
