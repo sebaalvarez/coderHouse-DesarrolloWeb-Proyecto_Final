@@ -4,36 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;700&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+    rel="stylesheet">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="cabecera">
-    <a class="logo" href="../index.html">
-      <img src=" ../imagenes/logo-hb.webp" width="50px" height="50px" alt="logo-hb">
-    </a>
-    <nav class="menu">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="./servicios.html">Servicios</a></li>
-        <li><a href="./noticias.html">Noticias</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
+  <header class="contenedorHeader">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="../index.html">
+          <img src=" ../imagenes/logo-hb.webp" alt="logo-hb">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link" href="./servicios.html">Servicios</a>
+            <a class="nav-link" href="./noticias.html">Noticias</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- MAIN -->
   <main>
-    <!-- HERO -->
-    <div class="hero imgNosotros">
-      <h1>Nosotros</h1>
-    </div>
 
-    <div class="contenedorBody">
+    <!-- HERO -->
+    <section class="imgNosotros">
+      <h1>Nosotros</h1>
+    </section>
+
+    <section class="contenedorBody">
       <p>Hubaide-Böhm y Asociados fue creado en la ciudad de Salta en 1992, con el objetivo de brindar servicios
         profesionales de Auditoría, Asesoramiento y Consultoría con los más altos estándares de excelencia. Brindamos
         servicios de calidad uniforme y de manera coordinada. Nuestros consultores, tiene responsabilidad directa en
@@ -42,7 +62,7 @@
 
       <!-- EQUIPO DE TRABAJO -->
       <section>
-        <div>
+        <article>
           <img src="../imagenes/e-marcelo.jpg" alt="Marcelo Hubaide">
           <h3>Marcelo Hubaide</h3>
           <p>Socio Fundador</p>
@@ -51,9 +71,9 @@
             Especializado enel área Contable-Impositiva.</p>
           <h4>+ Experiencia previa</h4>
           <h4>+ Post-grados</h4>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <img src="../imagenes/e-hugo.jpg" alt="Hugo Böhm">
           <h3>Hugo Böhm</h3>
           <p>Socio Fundador</p>
@@ -61,10 +81,10 @@
           <p>Contador público graduado en la Universidad Nacional de Tucumán en 1989 y socio fundador de la firma.</p>
           <h4>+ Experiencia previa</h4>
           <h4>+ Post-grados</h4>
-        </div>
+        </article>
 
-        <div>
-          <img src="../imagenes/e-marta.jpeg" alt="Marta Mendoza">
+        <article>
+          <img src="../imagenes/e-marta.jpg" alt="Marta Mendoza">
           <h3>Marta Mendoza</h3>
           <p>Gerente de Impuestos</p>
           <p>mmendoza@hubaidebohm.com.ar</p>
@@ -72,9 +92,9 @@
             Contadora Pública graduada de la Universidad Nacional de Salta en el año 2000.</p>
           <h4>+ Experiencia previa</h4>
           <h4>+ Post-grados</h4>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <img src="../imagenes/e-carina.png" alt=" Carina Mendía">
           <h3>Carina Mendía</h3>
           <p>Responsable de Auditoría Externa</p>
@@ -82,15 +102,22 @@
           <p>Contadora pública nacional, graduada en el año 2007. Especializada en el área de auditoría Externa.</p>
           <h4>+ Experiencia previa</h4>
           <h4>+ Post-grados</h4>
-        </div>
+        </article>
       </section>
-    </div>
+
+    </section>
+
   </main>
 
   <!-- FOOTER -->
   <footer>
     <p>Powered By <a class="footerA" href="https://www.agpro.com.ar" target="_blank"> AGpro Consulting</a></p>
   </footer>
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

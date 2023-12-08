@@ -1,19 +1,59 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
   box-sizing: border-box;
+
+  font-family: "Playpen Sans", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-blanco: #fff;
+  --color-body: #fff;
+  --color-principal: #000;
+  --color-secundario: #000;
+  --btn-back-principal: #b63636;
+  --btn-back-secundario: #fff;
+  --btn-text-principal: #fff;
+  --btn-text-secundario: #000;
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--color-body);
 }
 
 img {
-  max-width: 150px;
+  max-width: 10rem;
+}
+
+/****   UTILIDADES ****/
+.btnPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-back-principal);
+  color: var(--btn-text-principal);
+  padding: 0.3rem 1rem;
+  margin: 0px auto;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+.btnPrimary:hover {
+  background-color: var(--btn-back-secundario);
+  color: var(--btn-text-secundario);
 }
 
 .contenedorBody {
-  padding: 0px 100px;
+  max-width: 75rem;
+  margin: 0px auto;
+}
+
+.contenedorHeader {
+  background-color: darkgray;
+  position: sticky;
+  top: 0rem;
+  z-index: 99;
 }
 
 h1,
@@ -21,55 +61,46 @@ h2 {
   text-align: center;
 }
 
+/****  INICIO Modificaciones Bootstrap  ****/
+.navbar {
+  max-width: 80rem;
+  margin: 0px auto;
+  .nav-link {
+    &.active,
+    &.show {
+      color: var(--color-blanco);
+    }
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link:hover {
+  color: var(--color-blanco);
+}
+
+.navbar-brand {
+  & img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+ul {
+  margin-bottom: 0rem;
+}
+
+/****  FIN Modificaciones Bootstrap ****/
+
 /**** HEADER ****/
-.cabecera {
-  background-color: darkgray;
-  position: sticky;
-  top: 0%;
-  width: 100%;
-  padding: 20px 0px 20px 50px;
-  z-index: 99;
-}
-
-.logo {
-  display: inline-block;
-  width: 20%;
-}
-
-.menu {
-  display: inline-block;
-  width: 70%;
-  text-align: right;
-  position: absolute;
-  vertical-align: middle;
-  text-decoration: none;
-}
-
-.menu ul li {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 20px 10px;
-}
-
-li a,
-li .a:visited {
-  text-decoration: none;
-  color: #000;
-}
-
-li a:hover {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 10px 0px;
-}
-/**** FIN HEADER ****/
 
 /**** FOOTER ****/
 footer {
   text-align: center;
   background-color: black;
-  padding: 15px;
+  padding: 1rem;
   color: white;
 }
 
@@ -80,202 +111,280 @@ footer {
   color: #fff;
   text-decoration: none;
 }
-/**** FIN FOOTER ****/
 
 /**** HERO ****/
-.hero {
-  border: 0.5px solid black;
+:is(.imgInicio, .imgNosotros, .imgServicios, .imgNoticias, .imgContacto) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 300px;
-  margin-bottom: 20px;
+  height: 20rem;
+  margin-bottom: 1.3rem;
+  background-size: cover;
+  background-position: center;
+  & h1 {
+    font-size: 3rem;
+    color: var(--color-blanco);
+    text-shadow: 0 0 10px black;
+  }
+  & p {
+    margin-bottom: 1rem;
+  }
 }
 
 .imgInicio {
   background-image: url(../imagenes/hero-inicio.jpg);
-  background-size: cover;
 }
 
 .imgNosotros {
   background-image: url(../imagenes/hero-nosotros.jpg);
-  background-size: cover;
 }
 
 .imgServicios {
   background-image: url(../imagenes/hero-servicios.jpg);
-  background-size: cover;
 }
 
 .imgNoticias {
   background-image: url(../imagenes/hero-noticias.jpg);
-  background-size: cover;
 }
 
 .imgContacto {
   background-image: url(../imagenes/hero-contacto.jpg);
-  background-size: cover;
 }
 
-.hero h1 {
-  margin-top: 100px;
-  margin-bottom: 10px;
+:is(.servicioSection, .equipoSection, .clientesSection, .contactoSection) {
+  margin-top: 1.3rem;
+  padding-top: 1.3rem;
 }
 
-.hero p,
-.hero a {
-  margin-bottom: 10px;
-  display: block;
+/**** Servicios Inicio  ****/
+.servicioSection {
   text-align: center;
 }
-/**** FIN HERO ****/
 
 .servicioSectionP {
-  text-align: center;
-  padding: 20px 0px;
+  padding-inline: 2rem;
 }
 
-.serviciosInicio {
-  background-color: rgb(182, 181, 181);
-  margin: 10px 10px;
-  padding: 20px 20px;
-  border-radius: 20px;
+.serviciosInicioContenedorCard {
+  background-color: rgb(215, 215, 215);
+  margin-top: 1.3rem;
+  padding: 2rem 2rem;
+  border-radius: 1.3rem;
 }
 
-.serviciosInicio h3 {
-  margin: 25px 0px 5px 0px;
+:is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.serviciosInicio p {
-  margin: 0px 0px 5px 0px;
+.serviciosInicioCardDer {
+  flex-direction: row-reverse;
+}
+
+:is(.serviciosInicioCardIzq--texto, .serviciosInicioCardDer--texto) {
+  display: flex;
+  flex-direction: column;
+  & h3 {
+    margin-bottom: 1rem;
+  }
 }
 
 .btnMoreService {
   display: block;
   text-align: center;
-  margin: 10px 0px 0px 0px;
+  margin-top: 1rem;
 }
 
-.serviciosArticleImg {
-  display: inline-block;
-  width: 20%;
-  margin-inline-start: 20px;
-  margin-bottom: 25px;
-}
-
-.serviciosArticleTextoDer {
-  display: inline-block;
-  width: 74%;
-  text-align: right;
-  padding: 0px 0px 0px 200px;
-}
-
-.serviciosArticleTextoIzq {
-  display: inline-block;
-  width: 74%;
-  text-align: left;
-  padding: 0px 200px 0px 0px;
-}
-
+/****  Section Extracto   ****/
 .extractoSection {
   background-image: url(../imagenes/hero4.jpg);
   background-size: cover;
   background-attachment: fixed;
-  margin: 20px 0px;
-  padding: 90px 10px;
+  background-position: center;
+  margin-top: 1.3rem;
+  padding: 5.6rem 2rem;
   text-align: center;
-  font-size: 18px;
-  color: white;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 0 0 5px black;
 }
 
+/****  Section Equipo   ****/
 .equipoSection {
   background-color: rgb(205, 205, 205);
-  margin-top: 20px;
-  padding-top: 20px;
+}
+
+.equipoLista {
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .equipoCard {
-  display: inline-block;
-  margin: 20px 10px;
-  width: 180px;
-}
-
-.equipoCard h3,
-.equipoCard p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  margin: 1.3rem auto;
 }
 
 .equipoCardImg {
   border-radius: 20%;
-  margin: 0px 20px;
+  margin-bottom: 1rem;
 }
 
-.clientesSection {
-  margin-top: 20px;
-  padding-top: 20px;
+/****  Section Clientes   ****/
+.clientesLista {
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .clientesLogo {
-  margin: 20px 0px;
-  margin-inline-start: 10px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 1.3rem auto;
 }
 
+/****  Section Contacto   ****/
 .contactoSection {
-  background-color: rgb(192, 192, 192);
-  margin-top: 20px;
-  padding: 20px 0px 0px 0px;
+  background-image: url(../imagenes/hero-contacto.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contactoMap {
   width: 80%;
-  height: 350px;
-  padding: 20px;
-  position: relative;
-  left: 10%;
+  margin: 1.3rem auto;
+  height: 22rem;
 }
 
 .contactoFooter {
-  margin-bottom: 10px;
   display: block;
-  position: relative;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 .contactoInfo {
-  display: inline-block;
+  align-self: center;
   text-align: center;
-  width: 60%;
-  position: absolute;
-  top: 30%;
-}
-
-.contactoInfo p {
-  padding: 20px;
+  margin-block: 3rem;
+  & p {
+    padding: 1rem;
+  }
 }
 
 .contactoForm {
   background-color: rgb(169, 169, 169);
-  display: inline-block;
-  width: 35%;
-  padding: 20px 0 20px 20px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  position: relative;
-  left: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  max-width: 20rem;
+  margin: 0px auto;
+  & h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  & :is(input[type="text"], input[type="email"], textarea) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  & #mensaje {
+    margin-bottom: 0.5rem;
+  }
+  & label {
+    margin-top: 0.5rem;
+  }
 }
 
-.contactoForm h3 {
-  text-align: center;
+/* sm */
+@media (min-width: 576px) {
+  :is(.clientesLista, .equipoLista, ) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .equipoCard {
+    flex: 50%;
+  }
 }
 
-label,
-input,
-textarea {
-  display: block;
-  margin: 10px;
-  padding: 5px;
-}
+/* md */
+@media (min-width: 768px) {
+  :is(
+      .contactoFooter,
+      .clientesLista,
+      .equipoLista,
+      .serviciosInicioCardIzq,
+      .serviciosInicioCardDer
+    ) {
+    display: flex;
+  }
 
-.btnPrimary {
-  display: inline-block;
-  background-color: brown;
-  padding: 5px;
+  :is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .serviciosInicioCardIzq--texto {
+    align-items: start;
+    text-align: left;
+  }
+
+  .serviciosInicioCardDer--texto {
+    align-items: end;
+    text-align: right;
+  }
+
+  .contactoForm {
+    margin: 0px;
+  }
+
+  /* lg */
+  @media (min-width: 992px) {
+    .equipoCard {
+      flex: 25%;
+    }
+
+    .serviciosInicioContenedorCard {
+      padding-inline: 4.5rem;
+    }
+
+    .serviciosInicioCardIzq--texto {
+      padding-right: 11rem;
+    }
+
+    .serviciosInicioCardDer--texto {
+      padding-left: 11rem;
+    }
+  }
+
+  /* xl */
+  @media (min-width: 1200px) {
+    .serviciosInicioContenedorCard {
+      padding-inline: 9rem;
+    }
+
+    .serviciosInicioCardIzq--texto {
+      padding-right: 11rem;
+    }
+
+    .serviciosInicioCardDer--texto {
+      padding-left: 11rem;
+    }
+  }
 }

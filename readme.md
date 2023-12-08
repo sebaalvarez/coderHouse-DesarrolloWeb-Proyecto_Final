@@ -27,3 +27,30 @@ A continuación se adjuntan los links para poder ver el Wireframe/prototipo real
 Desktop: https://www.figma.com/proto/YozMBF71kpCd0fd9vHKRLW/HB?page-id=0%3A1&type=design&node-id=7-171&viewport=339%2C430%2C0.12&t=FoACjpq4xeO5Dkru-1&scaling=scale-down
 
 Movil: https://www.figma.com/proto/YozMBF71kpCd0fd9vHKRLW/HB?page-id=56%3A610&type=design&node-id=56-651&viewport=779%2C412%2C0.16&t=YfE0cPJR9FI83hN2-1&scaling=scale-down
+
+---
+
+REALIZADOS
+
+---
+
+Modificaciones Bootstrap
+Se utilizó el elemento navbar
+Se modifico css para tener un ancho maximo
+se modifico para que el hover tengo color de marca
+se modifico link activo para que tenga color de marca
+se modifico para que tome todo el ancho el logo y menu
+Se modifico navbar-brand para definir el tamaño del logo
+
+Se definió clase para manejo de link como botones con
+
+---
+
+PENDIENTES:
+
+---
+
+modificar menu hamburguesa:
+
+- Centrar menú
+- Colocar color de fondo
