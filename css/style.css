@@ -9,6 +9,8 @@
 
 :root {
   --color-blanco: #fff;
+  --color-negro: #000;
+  --color-gris: #666;
   --color-body: #fff;
   --color-principal: #000;
   --color-secundario: #000;
@@ -90,6 +92,20 @@ h2 {
 
 ul {
   margin-bottom: 0rem;
+}
+
+.accordion {
+  width: 100%;
+  --bs-accordion-active-bg: var(--color-gris);
+}
+
+.accordion-body {
+  & ul {
+    & li {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 /****  FIN Modificaciones Bootstrap ****/
@@ -232,6 +248,12 @@ footer {
   justify-content: center;
   text-align: center;
   margin: 1.3rem auto;
+  padding-block: 1rem;
+}
+
+.equipoCard:hover {
+  box-shadow: inset 0 0 0.9rem 0 var(--color-gris);
+  border-radius: 1rem;
 }
 
 .equipoCardImg {
@@ -241,15 +263,17 @@ footer {
 
 /****  Section Clientes   ****/
 .clientesLista {
-  display: block;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 200px));
+  gap: 2rem;
+  margin: 0px auto;
+  justify-content: center;
   padding-bottom: 1rem;
 }
 
 .clientesLogo {
-  display: flex;
-  justify-content: center;
+  align-self: center;
+  justify-self: center;
   margin: 1.3rem auto;
 }
 
@@ -311,9 +335,38 @@ footer {
   }
 }
 
+.sobreNosotrosP {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.nosotrosCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.5rem 0 var(--color-gris);
+}
+
+.nosotrosCardTitulo {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.nosotrosCardPuesto {
+  margin-bottom: 0rem;
+}
+
 /* sm */
 @media (min-width: 576px) {
-  :is(.clientesLista, .equipoLista, ) {
+  :is(.equipoLista, ) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -327,7 +380,6 @@ footer {
 @media (min-width: 768px) {
   :is(
       .contactoFooter,
-      .clientesLista,
       .equipoLista,
       .serviciosInicioCardIzq,
       .serviciosInicioCardDer
@@ -354,37 +406,48 @@ footer {
     margin: 0px;
   }
 
-  /* lg */
-  @media (min-width: 992px) {
-    .equipoCard {
-      flex: 25%;
-    }
-
-    .serviciosInicioContenedorCard {
-      padding-inline: 4.5rem;
-    }
-
-    .serviciosInicioCardIzq--texto {
-      padding-right: 11rem;
-    }
-
-    .serviciosInicioCardDer--texto {
-      padding-left: 11rem;
+  .nosotrosCardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    & div {
+      margin-left: 2rem;
     }
   }
+}
 
-  /* xl */
-  @media (min-width: 1200px) {
-    .serviciosInicioContenedorCard {
-      padding-inline: 9rem;
-    }
+/* lg */
+@media (min-width: 992px) {
+  .equipoCard {
+    flex: 25%;
+  }
 
-    .serviciosInicioCardIzq--texto {
-      padding-right: 11rem;
-    }
+  .serviciosInicioContenedorCard {
+    padding-inline: 4.5rem;
+  }
 
-    .serviciosInicioCardDer--texto {
-      padding-left: 11rem;
-    }
+  .serviciosInicioCardIzq--texto {
+    padding-right: 11rem;
+  }
+
+  .serviciosInicioCardDer--texto {
+    padding-left: 11rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .serviciosInicioContenedorCard {
+    padding-inline: 9rem;
+  }
+
+  .serviciosInicioCardIzq--texto {
+    padding-right: 11rem;
+  }
+
+  .serviciosInicioCardDer--texto {
+    padding-left: 11rem;
   }
 }

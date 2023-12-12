@@ -35,14 +35,18 @@ REALIZADOS
 ---
 
 Modificaciones Bootstrap
-Se utilizó el elemento navbar
-Se modifico css para tener un ancho maximo
-se modifico para que el hover tengo color de marca
-se modifico link activo para que tenga color de marca
-se modifico para que tome todo el ancho el logo y menu
-Se modifico navbar-brand para definir el tamaño del logo
+Elemento navbar:
 
-Se definió clase para manejo de link como botones con
+- Se modifico css para tener un ancho maximo
+- Se modifico para que el hover tengo color de marca
+- Se modifico link activo para que tenga color de marca
+- Se modifico para que tome todo el ancho el logo y menu
+- Se modifico navbar-brand para definir el tamaño del logo
+
+Elemento acordion:
+
+- Se modifico el ancho del acordión para que se ajuste al 100%
+- Se modificó color de fondo cuando el ítem del acordión esta activo
 
 ---
 
