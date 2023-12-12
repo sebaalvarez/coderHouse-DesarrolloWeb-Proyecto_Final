@@ -130,6 +130,7 @@ footer {
 }
 
 /**** HERO ****/
+
 :is(.imgInicio, .imgNosotros, .imgServicios, .imgNoticias, .imgContacto) {
   display: flex;
   flex-direction: column;
@@ -365,6 +366,19 @@ footer {
   margin-bottom: 0rem;
 }
 
+:is(.servicioCardIzq, .servicioCardDer) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-inline: 2rem;
+  & img {
+    margin-block: 1rem;
+    box-shadow: 2px 2px 4px 1px var(--color-gris);
+  }
+}
+
 /* sm */
 @media (min-width: 576px) {
   :is(.equipoLista, ) {
@@ -416,6 +430,16 @@ footer {
     & div {
       margin-left: 2rem;
     }
+  }
+
+  .servicioCardIzq {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .servicioCardDer {
+    flex-direction: row-reverse;
+    gap: 2rem;
   }
 }
 
