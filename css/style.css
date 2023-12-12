@@ -97,6 +97,7 @@ ul {
 .accordion {
   width: 100%;
   --bs-accordion-active-bg: var(--color-gris);
+  --bs-accordion-active-color: var(--color-blanco);
 }
 
 .accordion-body {

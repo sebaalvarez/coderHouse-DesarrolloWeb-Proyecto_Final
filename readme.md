@@ -47,7 +47,7 @@ Modificaciones Bootstrap:
 - Elemento acordion:
 
   - Se modifico el ancho del acordión para que se ajuste al 100%
-  - Se modificó color de fondo cuando el ítem del acordión esta activo
+  - Se modificó color de fondo y texto cuando el ítem del acordión esta activo
 
 ---
 
