@@ -199,15 +199,14 @@ footer {
   margin-bottom: 2rem;
 }
 
-.serviciosInicioCardDer {
-  flex-direction: row-reverse;
-}
-
 :is(.serviciosInicioCardIzq--texto, .serviciosInicioCardDer--texto) {
   display: flex;
   flex-direction: column;
   & h3 {
     margin-bottom: 1rem;
+  }
+  & p {
+    text-align: justify;
   }
 }
 
@@ -405,6 +404,10 @@ footer {
   :is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
     margin-bottom: 2rem;
     gap: 2rem;
+  }
+
+  .serviciosInicioCardDer {
+    flex-direction: row-reverse;
   }
 
   .serviciosInicioCardIzq--texto {
