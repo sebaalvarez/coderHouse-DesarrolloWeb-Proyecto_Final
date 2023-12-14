@@ -5,14 +5,16 @@
 
   font-family: "Playpen Sans", cursive;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 :root {
   --color-blanco: #fff;
   --color-negro: #000;
   --color-gris: #666;
+  --color-gris-light: #ddd;
   --color-body: #fff;
-  --color-principal: #000;
+  --color-principal: #b63636;
   --color-secundario: #000;
   --btn-back-principal: #b63636;
   --btn-back-secundario: #fff;
@@ -70,7 +72,7 @@ h2 {
   .nav-link {
     &.active,
     &.show {
-      color: var(--color-blanco);
+      color: var(--color-principal);
     }
   }
 }
@@ -80,7 +82,7 @@ h2 {
 }
 
 .nav-link:hover {
-  color: var(--color-blanco);
+  color: var(--color-principal);
 }
 
 .navbar-brand {
@@ -96,7 +98,7 @@ ul {
 
 .accordion {
   width: 100%;
-  --bs-accordion-active-bg: var(--color-gris);
+  --bs-accordion-active-bg: var(--color-principal);
   --bs-accordion-active-color: var(--color-blanco);
 }
 
@@ -118,14 +120,14 @@ footer {
   text-align: center;
   background-color: black;
   padding: 1rem;
-  color: white;
+  color: var(--color-blanco);
 }
 
 .footerA,
 .footerA:link,
 .footerA:visited,
 .footerA:hover {
-  color: #fff;
+  color: var(--color-blanco);
   text-decoration: none;
 }
 
@@ -177,26 +179,26 @@ footer {
 }
 
 /**** Servicios Inicio  ****/
-.servicioSection {
-  text-align: center;
-}
-
-.servicioSectionP {
-  padding-inline: 2rem;
-}
-
 .serviciosInicioContenedorCard {
-  background-color: rgb(215, 215, 215);
+  background-color: var(--color-gris-light);
   margin-top: 1.3rem;
   padding: 2rem 2rem;
   border-radius: 1.3rem;
 }
 
 :is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
-  display: block;
-  justify-content: center;
+  background-color: aliceblue;
+  padding: 2rem;
+  border-radius: 1rem;
   align-items: center;
   margin-bottom: 2rem;
+  & img {
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px var(--color-gris);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 :is(.serviciosInicioCardIzq--texto, .serviciosInicioCardDer--texto) {
@@ -204,6 +206,7 @@ footer {
   flex-direction: column;
   & h3 {
     margin-bottom: 1rem;
+    text-align: center;
   }
   & p {
     text-align: justify;
@@ -226,13 +229,13 @@ footer {
   padding: 5.6rem 2rem;
   text-align: center;
   font-size: 1.3rem;
-  color: #fff;
-  text-shadow: 0 0 5px black;
+  color: var(--color-blanco);
+  text-shadow: 0 0 5px var(--color-negro);
 }
 
 /****  Section Equipo   ****/
 .equipoSection {
-  background-color: rgb(205, 205, 205);
+  background-color: var(--color-gris-light);
 }
 
 .equipoLista {
@@ -307,11 +310,12 @@ footer {
   margin-block: 3rem;
   & p {
     padding: 1rem;
+    font-weight: 500;
   }
 }
 
 .contactoForm {
-  background-color: rgb(169, 169, 169);
+  background-color: var(--color-gris-light);
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
@@ -365,6 +369,14 @@ footer {
   margin-bottom: 0rem;
 }
 
+.servicioCard {
+  & h2 {
+    color: var(--color-gris);
+    text-shadow: 1px 1px 1px var(--color-negro);
+    margin-bottom: 1rem;
+  }
+}
+
 :is(.servicioCardIzq, .servicioCardDer) {
   display: flex;
   flex-direction: column;
@@ -373,11 +385,36 @@ footer {
   text-align: justify;
   padding-inline: 2rem;
   & img {
+    max-width: 20rem;
     margin-block: 1rem;
-    box-shadow: 2px 2px 4px 1px var(--color-gris);
+    box-shadow: px 2px 4px 1px var(--color-gris);
   }
 }
 
+.sectionNoticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));
+  justify-content: center;
+}
+
+.cardNoticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-gris-light);
+  border: 0.1rem solid var(--color-gris);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: justify;
+
+  & img {
+    max-width: 100%;
+    margin-block: 1rem;
+  }
+}
+
+/* ***   MEDIA QUERY *** */
 /* sm */
 @media (min-width: 576px) {
   :is(.equipoLista, ) {
