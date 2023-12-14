@@ -54,8 +54,3 @@ Modificaciones Bootstrap:
 PENDIENTES:
 
 ---
-
-modificar menu hamburguesa:
-
-- Centrar menú
-- Colocar color de fondo

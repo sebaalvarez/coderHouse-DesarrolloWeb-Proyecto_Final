@@ -146,10 +146,14 @@ footer {
   & h1 {
     font-size: 3rem;
     color: var(--color-blanco);
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px var(--color-negro);
   }
   & p {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-blanco);
+    text-shadow: 0 0 10px var(--color-negro);
   }
 }
 
@@ -337,6 +341,10 @@ footer {
   }
   & label {
     margin-top: 0.5rem;
+  }
+  & textarea {
+    resize: none;
+    height: 150px;
   }
 }
 
