@@ -113,8 +113,6 @@ ul {
 
 /****  FIN Modificaciones Bootstrap ****/
 
-/**** HEADER ****/
-
 /**** FOOTER ****/
 footer {
   text-align: center;
@@ -123,17 +121,18 @@ footer {
   color: var(--color-blanco);
 }
 
-.footerA,
-.footerA:link,
-.footerA:visited,
-.footerA:hover {
+.footer_Link,
+.footer_Link :is(:link, :visited, :hover) {
   color: var(--color-blanco);
   text-decoration: none;
 }
 
 /**** HERO ****/
-
-:is(.imgInicio, .imgNosotros, .imgServicios, .imgNoticias, .imgContacto) {
+.imgInicio,
+.imgNosotros,
+.imgServicios,
+.imgNoticias,
+.imgContacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +176,10 @@ footer {
   background-image: url(../imagenes/hero-contacto.jpg);
 }
 
-:is(.servicioSection, .equipoSection, .clientesSection, .contactoSection) {
+.servicioSection,
+.equipoSection,
+.clientesSection,
+.contactoSection {
   margin-top: 1.3rem;
   padding-top: 1.3rem;
 }
@@ -190,7 +192,8 @@ footer {
   border-radius: 1.3rem;
 }
 
-:is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
+.serviciosInicioCardIzq,
+.serviciosInicioCardDer {
   background-color: aliceblue;
   padding: 2rem;
   border-radius: 1rem;
@@ -205,7 +208,8 @@ footer {
   }
 }
 
-:is(.serviciosInicioCardIzq--texto, .serviciosInicioCardDer--texto) {
+.serviciosInicioCardIzq--texto,
+.serviciosInicioCardDer--texto {
   display: flex;
   flex-direction: column;
   & h3 {
@@ -300,9 +304,10 @@ footer {
   width: 80%;
   margin: 1.3rem auto;
   height: 22rem;
+  border: 0;
 }
 
-.contactoFooter {
+.contactoDetalle {
   display: block;
   justify-content: space-evenly;
   margin-bottom: 1rem;
@@ -348,6 +353,7 @@ footer {
   }
 }
 
+/**** Página Nosotros ***/
 .sobreNosotrosP {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +383,7 @@ footer {
   margin-bottom: 0rem;
 }
 
+/**** Página Servicios ***/
 .servicioCard {
   & h2 {
     color: var(--color-gris);
@@ -385,7 +392,8 @@ footer {
   }
 }
 
-:is(.servicioCardIzq, .servicioCardDer) {
+.servicioCardIzq,
+.servicioCardDer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -399,6 +407,7 @@ footer {
   }
 }
 
+/**** Página Noticias ***/
 .sectionNoticias {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));
@@ -425,7 +434,7 @@ footer {
 /* ***   MEDIA QUERY *** */
 /* sm */
 @media (min-width: 576px) {
-  :is(.equipoLista, ) {
+  .equipoLista {
     display: flex;
     flex-wrap: wrap;
   }
@@ -437,16 +446,15 @@ footer {
 
 /* md */
 @media (min-width: 768px) {
-  :is(
-      .contactoFooter,
-      .equipoLista,
-      .serviciosInicioCardIzq,
-      .serviciosInicioCardDer
-    ) {
+  .contactoDetalle,
+  .equipoLista,
+  .serviciosInicioCardIzq,
+  .serviciosInicioCardDer {
     display: flex;
   }
 
-  :is(.serviciosInicioCardIzq, .serviciosInicioCardDer) {
+  .serviciosInicioCardIzq,
+  .serviciosInicioCardDer {
     margin-bottom: 2rem;
     gap: 2rem;
   }
