@@ -1,10 +1,9 @@
 @import "./partials/variables.scss";
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "./partials/mixins.scss";
+@import "./partials/normalilze";
+@import "./partials/footer.scss";
+@import "./partials/_hero.scss";
+@import "./partials/heroImagenes.scss";
 
 body {
   background-color: $color-body;
@@ -15,9 +14,7 @@ img {
 }
 
 .btnPrimary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-center;
   background-color: $btn-back-principal;
   color: $btn-text-principal;
   padding: 0.3rem 1rem;
@@ -91,15 +88,6 @@ ul {
     }
   }
 }
-
-/**** FOOTER ****/
-@import "./partials/footer.scss";
-
-/**** HERO ****/
-@import "./partials/_hero.scss";
-
-/**** HERO IMAGENES ****/
-@import "./partials/heroImagenes.scss";
 
 .servicioSection,
 .equipoSection,
@@ -179,10 +167,8 @@ ul {
 }
 
 .equipoCard {
-  display: flex;
+  @include flex-center-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   margin: 1.3rem auto;
   padding-block: 1rem;
@@ -287,10 +273,8 @@ ul {
 }
 
 .nosotrosCard {
-  display: flex;
+  @include flex-center-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 2rem auto;
   padding: 1rem;
   text-align: center;
@@ -319,10 +303,8 @@ ul {
 
 .servicioCardIzq,
 .servicioCardDer {
-  display: flex;
+  @include flex-center-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: justify;
   padding-inline: 2rem;
   & img {
@@ -403,10 +385,8 @@ ul {
   }
 
   .nosotrosCardHeader {
-    display: flex;
+    @include flex-center-center;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 2rem;
     & div {
       margin-left: 2rem;

@@ -5,6 +5,79 @@
   box-sizing: border-box;
 }
 
+/**** INICIO FOOTER ****/
+footer {
+  text-align: center;
+  background-color: #000;
+  padding: 1rem;
+  color: #fff;
+}
+
+.footer_Link,
+.footer_Link :is(:link, :visited, :hover) {
+  color: #fff;
+  text-decoration: none;
+}
+
+/**** FIN FOOTER ****/
+/**** INICIO HERO ****/
+.imgInicio,
+.imgNosotros,
+.imgServicios,
+.imgNoticias,
+.imgContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.3rem;
+  background-size: cover;
+  background-position: center;
+}
+.imgInicio h1,
+.imgNosotros h1,
+.imgServicios h1,
+.imgNoticias h1,
+.imgContacto h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+.imgInicio p,
+.imgNosotros p,
+.imgServicios p,
+.imgNoticias p,
+.imgContacto p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+/**** FIN HERO ****/
+.imgInicio {
+  background-image: url(../imagenes/hero-inicio.jpg);
+}
+
+.imgNosotros {
+  background-image: url(../imagenes/hero-nosotros.jpg);
+}
+
+.imgServicios {
+  background-image: url(../imagenes/hero-servicios.jpg);
+}
+
+.imgNoticias {
+  background-image: url(../imagenes/hero-noticias.jpg);
+}
+
+.imgContacto {
+  background-image: url(../imagenes/hero-contacto.jpg);
+}
+
 body {
   background-color: #fff;
 }
@@ -80,78 +153,6 @@ ul {
 .accordion-body ul li {
   text-align: left;
   margin-bottom: 1rem;
-}
-
-/**** FOOTER ****/
-footer {
-  text-align: center;
-  background-color: #000;
-  padding: 1rem;
-  color: #fff;
-}
-
-.footer_Link,
-.footer_Link :is(:link, :visited, :hover) {
-  color: #fff;
-  text-decoration: none;
-}
-
-/**** HERO ****/
-.imgInicio,
-.imgNosotros,
-.imgServicios,
-.imgNoticias,
-.imgContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 1.3rem;
-  background-size: cover;
-  background-position: center;
-}
-.imgInicio h1,
-.imgNosotros h1,
-.imgServicios h1,
-.imgNoticias h1,
-.imgContacto h1 {
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-}
-.imgInicio p,
-.imgNosotros p,
-.imgServicios p,
-.imgNoticias p,
-.imgContacto p {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-}
-
-/**** HERO IMAGENES ****/
-.imgInicio {
-  background-image: url(../imagenes/hero-inicio.jpg);
-}
-
-.imgNosotros {
-  background-image: url(../imagenes/hero-nosotros.jpg);
-}
-
-.imgServicios {
-  background-image: url(../imagenes/hero-servicios.jpg);
-}
-
-.imgNoticias {
-  background-image: url(../imagenes/hero-noticias.jpg);
-}
-
-.imgContacto {
-  background-image: url(../imagenes/hero-contacto.jpg);
 }
 
 .servicioSection,
@@ -236,9 +237,9 @@ footer {
 
 .equipoCard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   margin: 1.3rem auto;
   padding-block: 1rem;
@@ -344,9 +345,9 @@ footer {
 
 .nosotrosCard {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 2rem auto;
   padding: 1rem;
   text-align: center;
@@ -374,9 +375,9 @@ footer {
 .servicioCardIzq,
 .servicioCardDer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: justify;
   padding-inline: 2rem;
 }
@@ -450,9 +451,9 @@ footer {
   }
   .nosotrosCardHeader {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-bottom: 2rem;
   }
   .nosotrosCardHeader div {
