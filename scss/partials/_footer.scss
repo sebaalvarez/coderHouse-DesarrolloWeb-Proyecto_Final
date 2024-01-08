@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  background-color: $color-negro;
+  padding: 1rem;
+  color: $color-blanco;
+}
+
+.footer_Link,
+.footer_Link :is(:link, :visited, :hover) {
+  color: $color-blanco;
+  text-decoration: none;
+}

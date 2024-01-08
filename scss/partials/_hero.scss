@@ -1,0 +1,27 @@
+.imgInicio,
+.imgNosotros,
+.imgServicios,
+.imgNoticias,
+.imgContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.3rem;
+  background-size: cover;
+  background-position: center;
+  & h1 {
+    font-size: 3rem;
+    color: $color-blanco;
+    text-shadow: 0 0 10px $color-negro;
+  }
+  & p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-blanco;
+    text-shadow: 0 0 10px $color-negro;
+  }
+}

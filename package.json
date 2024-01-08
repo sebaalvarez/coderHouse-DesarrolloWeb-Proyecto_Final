@@ -1,0 +1,12 @@
+{
+  "name": "desarrollowebcoderhouse",
+  "version": "1.0.0",
+  "description": "## 1ra Pre-Entrega:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
