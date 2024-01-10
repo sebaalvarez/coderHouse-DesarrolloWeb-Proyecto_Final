@@ -1,0 +1,22 @@
+/**** Página Servicios ***/
+.servicioCard {
+  & h2 {
+    color: $color-gris;
+    text-shadow: 1px 1px 1px $color-negro;
+    margin-bottom: 1rem;
+  }
+}
+
+.servicioCardIzq,
+.servicioCardDer {
+  @include flex-center-center;
+  flex-direction: column;
+  text-align: justify;
+  padding-inline: 2rem;
+  & img {
+    max-width: 20rem;
+    margin-block: 1rem;
+    box-shadow: px 2px 4px 1px $color-gris;
+  }
+}
+/**** FIN Servicios ****/

@@ -1,0 +1,44 @@
+.navbar {
+  max-width: 80rem;
+  margin: 0px auto;
+  .nav-link {
+    &.active,
+    &.show {
+      color: $color-principal;
+    }
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link:hover {
+  color: $color-principal;
+}
+
+.navbar-brand {
+  & img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+ul {
+  margin-bottom: 0rem;
+}
+
+.accordion {
+  width: 100%;
+  --bs-accordion-active-bg: $color-principal;
+  --bs-accordion-active-color: $color-blanco;
+}
+
+.accordion-body {
+  & ul {
+    & li {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/**** Página Nosotros ***/
+.sobreNosotrosP {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.nosotrosCard {
+  @include flex-center-center;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.5rem 0 $color-gris;
+}
+
+.nosotrosCardTitulo {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.nosotrosCardPuesto {
+  margin-bottom: 0rem;
+}
+/**** Fin Nosotros ****/

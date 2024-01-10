@@ -3,3 +3,42 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: $color-body;
+}
+
+img {
+  max-width: 10rem;
+}
+
+.btnPrimary {
+  @include flex-center-center;
+  background-color: $btn-back-principal;
+  color: $btn-text-principal;
+  padding: 0.3rem 1rem;
+  margin: 0px auto;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  &:hover {
+    background-color: $btn-back-secundario;
+    color: $btn-text-secundario;
+  }
+}
+
+.contenedorBody {
+  max-width: 75rem;
+  margin: 0px auto;
+}
+
+.contenedorHeader {
+  background-color: darkgray;
+  position: sticky;
+  top: 0rem;
+  z-index: 99;
+}
+
+h1,
+h2 {
+  text-align: center;
+}

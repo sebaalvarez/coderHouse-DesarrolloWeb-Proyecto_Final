@@ -1,0 +1,99 @@
+/* ***   MEDIA QUERY *** */
+/* sm */
+@media (min-width: 576px) {
+  .equipoLista {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .equipoCard {
+    flex: 50%;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .contactoDetalle,
+  .equipoLista,
+  .serviciosInicioCardIzq,
+  .serviciosInicioCardDer {
+    display: flex;
+  }
+
+  .serviciosInicioCardIzq,
+  .serviciosInicioCardDer {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .serviciosInicioCardDer {
+    flex-direction: row-reverse;
+  }
+
+  .serviciosInicioCardIzq--texto {
+    align-items: start;
+    text-align: left;
+  }
+
+  .serviciosInicioCardDer--texto {
+    align-items: end;
+    text-align: right;
+  }
+
+  .contactoForm {
+    margin: 0px;
+  }
+
+  .nosotrosCardHeader {
+    @include flex-center-center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    & div {
+      margin-left: 2rem;
+    }
+  }
+
+  .servicioCardIzq {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .servicioCardDer {
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .equipoCard {
+    flex: 25%;
+  }
+
+  .serviciosInicioContenedorCard {
+    padding-inline: 4.5rem;
+  }
+
+  .serviciosInicioCardIzq--texto {
+    padding-right: 11rem;
+  }
+
+  .serviciosInicioCardDer--texto {
+    padding-left: 11rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .serviciosInicioContenedorCard {
+    padding-inline: 9rem;
+  }
+
+  .serviciosInicioCardIzq--texto {
+    padding-right: 11rem;
+  }
+
+  .serviciosInicioCardDer--texto {
+    padding-left: 11rem;
+  }
+}

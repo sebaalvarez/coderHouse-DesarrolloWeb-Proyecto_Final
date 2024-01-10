@@ -1,0 +1,24 @@
+/**** Página Noticias ***/
+.sectionNoticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));
+  justify-content: center;
+}
+
+.cardNoticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-gris-light;
+  border: 0.1rem solid $color-gris;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: justify;
+
+  & img {
+    max-width: 100%;
+    margin-block: 1rem;
+  }
+}
+/**** FIN Noticias ****/

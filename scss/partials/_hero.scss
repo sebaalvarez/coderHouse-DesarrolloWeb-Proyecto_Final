@@ -4,26 +4,43 @@
 .imgServicios,
 .imgNoticias,
 .imgContacto {
-  display: flex;
+  @include flex-center-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 20rem;
   margin-bottom: 1.3rem;
   background-size: cover;
   background-position: center;
+
   & h1 {
     font-size: 3rem;
     color: $color-blanco;
     text-shadow: 0 0 10px $color-negro;
   }
+
   & p {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: $color-blanco;
     text-shadow: 0 0 10px $color-negro;
+  }
+
+  animation-name: zoomHero;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomHero {
+  0% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 1;
   }
 }
 /**** FIN HERO ****/
