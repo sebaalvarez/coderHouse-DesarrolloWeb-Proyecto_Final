@@ -5,6 +5,14 @@
     text-shadow: 1px 1px 1px $color-negro;
     margin-bottom: 1rem;
   }
+
+  view-timeline-name: --servicio;
+  view-timeline-axis: block;
+
+  animation-timeline: --servicio;
+  animation-name: scrollScale;
+  animation-range: entry 30% cover 50%;
+  animation-fill-mode: both;
 }
 
 .servicioCardIzq,

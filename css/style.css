@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@keyframes zoomHero {
+  0% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 1;
+  }
+}
+@keyframes scrollScale {
+  0% {
+    opacity: 0;
+    scale: 25%;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -102,16 +122,6 @@ footer {
   text-shadow: 0 0 10px #000;
 }
 
-@keyframes zoomHero {
-  0% {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale3d(1.1, 1.1, 1.1);
-    opacity: 1;
-  }
-}
 /**** FIN HERO ****/
 .imgInicio {
   background-image: url(../imagenes/hero-inicio.jpg);
@@ -387,6 +397,14 @@ ul {
 
 /**** Fin Nosotros ****/
 /**** Página Servicios ***/
+.servicioCard {
+  view-timeline-name: --servicio;
+  view-timeline-axis: block;
+  animation-timeline: --servicio;
+  animation-name: scrollScale;
+  animation-range: entry 30% cover 50%;
+  animation-fill-mode: both;
+}
 .servicioCard h2 {
   color: #666;
   text-shadow: 1px 1px 1px #000;
@@ -431,6 +449,10 @@ ul {
 .cardNoticias img {
   max-width: 100%;
   margin-block: 1rem;
+}
+.cardNoticias h4 {
+  text-align: center;
+  font-weight: bold;
 }
 
 /**** FIN Noticias ****/
