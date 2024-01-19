@@ -532,6 +532,11 @@ ul {
   .footerInfo i {
     padding-block: 0.3rem;
   }
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 /* md */
 @media (min-width: 768px) {
@@ -588,6 +593,11 @@ ul {
   .footerInfo--redes i {
     padding-inline: 0.8rem;
   }
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 /* lg */
 @media (min-width: 992px) {
@@ -615,6 +625,11 @@ ul {
   .footerInfo--contacto i {
     padding-left: 1.2rem;
   }
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 /* xl */
 @media (min-width: 1200px) {
@@ -628,10 +643,17 @@ ul {
     padding-left: 11rem;
   }
   .footerInfo {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 75rem;
     align-items: center;
     margin: auto;
+  }
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
   }
 }
 

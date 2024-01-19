@@ -19,6 +19,12 @@
       padding-block: 0.3rem;
     }
   }
+
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 
 /* md */
@@ -85,6 +91,12 @@
       padding-inline: 0.8rem;
     }
   }
+
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 
 /* lg */
@@ -119,6 +131,11 @@
       padding-left: 1.2rem;
     }
   }
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
 }
 
 /* xl */
@@ -136,9 +153,17 @@
   }
 
   .footerInfo {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 75rem;
     align-items: center;
     margin: auto;
+  }
+
+  .footerInfo--contactoCard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
   }
 }
