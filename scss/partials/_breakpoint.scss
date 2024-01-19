@@ -9,6 +9,16 @@
   .equipoCard {
     flex: 50%;
   }
+
+  .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & i {
+      padding-block: 0.3rem;
+    }
+  }
 }
 
 /* md */
@@ -40,8 +50,12 @@
     text-align: right;
   }
 
+  .contactoInfo p {
+    margin-inline: 0rem;
+  }
+
   .contactoForm {
-    margin: 0px;
+    margin: 0rem;
   }
 
   .nosotrosCardHeader {
@@ -62,6 +76,15 @@
     flex-direction: row-reverse;
     gap: 2rem;
   }
+
+  .footerInfo--redes {
+    display: flex;
+    flex-direction: row;
+
+    & i {
+      padding-inline: 0.8rem;
+    }
+  }
 }
 
 /* lg */
@@ -81,6 +104,21 @@
   .serviciosInicioCardDer--texto {
     padding-left: 11rem;
   }
+
+  .footerInfo {
+    justify-content: space-between;
+  }
+
+  .footerInfo--contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    & i {
+      padding-left: 1.2rem;
+    }
+  }
 }
 
 /* xl */
@@ -95,5 +133,12 @@
 
   .serviciosInicioCardDer--texto {
     padding-left: 11rem;
+  }
+
+  .footerInfo {
+    justify-content: space-between;
+    max-width: 75rem;
+    align-items: center;
+    margin: auto;
   }
 }

@@ -70,8 +70,55 @@ h2 {
 footer {
   text-align: center;
   background-color: #000;
-  padding: 1rem;
+  padding-top: 1rem;
   color: #fff;
+}
+footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+footer i {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+footer hr {
+  margin: 0rem;
+}
+
+.footerInfo--contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.footerInfo--contacto i {
+  padding-block: 0.3rem;
+}
+
+.footerInfo--contactoCard {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+
+.footerInfo--redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.footerInfo--redes i {
+  padding-inline: 0.6rem;
+}
+
+.footerDevelopers {
+  background-color: #000;
+  padding-block: 0.5rem;
+}
+.footerDevelopers p {
+  font-size: 0.7rem;
 }
 
 .footer_Link,
@@ -82,6 +129,10 @@ footer {
 
 /**** FIN FOOTER ****/
 /**** INICIO HERO ****/
+.hero {
+  overflow: hidden;
+}
+
 .imgInicio,
 .imgNosotros,
 .imgServicios,
@@ -140,7 +191,7 @@ footer {
 }
 
 .imgContacto {
-  background-image: url(../imagenes/hero-contacto.jpg);
+  background-image: url(../imagenes/hero-contacto.jpeg);
 }
 
 .navbar {
@@ -302,13 +353,16 @@ ul {
 
 /****  Section Contacto   ****/
 .contactoSection {
-  background-image: url(../imagenes/hero-contacto.jpg);
+  background-image: url(../imagenes/body-contacto.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.contactoSection h2 {
+  text-shadow: 2px 2px 0.5px #fff;
 }
 
 .contactoMap {
@@ -330,8 +384,12 @@ ul {
   margin-block: 3rem;
 }
 .contactoInfo p {
-  padding: 1rem;
+  padding: 0.7rem 2rem;
   font-weight: 500;
+  color: #000;
+  background-color: #ddd;
+  border-radius: 20px;
+  margin-inline: 10%;
 }
 
 .contactoForm {
@@ -466,6 +524,14 @@ ul {
   .equipoCard {
     flex: 50%;
   }
+  .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerInfo i {
+    padding-block: 0.3rem;
+  }
 }
 /* md */
 @media (min-width: 768px) {
@@ -491,8 +557,11 @@ ul {
     align-items: end;
     text-align: right;
   }
+  .contactoInfo p {
+    margin-inline: 0rem;
+  }
   .contactoForm {
-    margin: 0px;
+    margin: 0rem;
   }
   .nosotrosCardHeader {
     display: flex;
@@ -512,6 +581,13 @@ ul {
     flex-direction: row-reverse;
     gap: 2rem;
   }
+  .footerInfo--redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerInfo--redes i {
+    padding-inline: 0.8rem;
+  }
 }
 /* lg */
 @media (min-width: 992px) {
@@ -527,6 +603,18 @@ ul {
   .serviciosInicioCardDer--texto {
     padding-left: 11rem;
   }
+  .footerInfo {
+    justify-content: space-between;
+  }
+  .footerInfo--contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerInfo--contacto i {
+    padding-left: 1.2rem;
+  }
 }
 /* xl */
 @media (min-width: 1200px) {
@@ -538,6 +626,12 @@ ul {
   }
   .serviciosInicioCardDer--texto {
     padding-left: 11rem;
+  }
+  .footerInfo {
+    justify-content: space-between;
+    max-width: 75rem;
+    align-items: center;
+    margin: auto;
   }
 }
 

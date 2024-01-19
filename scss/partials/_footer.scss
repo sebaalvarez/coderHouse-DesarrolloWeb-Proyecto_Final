@@ -2,8 +2,55 @@
 footer {
   text-align: center;
   background-color: $color-negro;
-  padding: 1rem;
+  padding-top: 1rem;
   color: $color-blanco;
+  & p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  & i {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  & hr {
+    margin: 0rem;
+  }
+}
+
+.footerInfo--contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  & i {
+    padding-block: 0.3rem;
+  }
+}
+
+.footerInfo--contactoCard {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+
+.footerInfo--redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  & i {
+    padding-inline: 0.6rem;
+  }
+}
+
+.footerDevelopers {
+  background-color: $color-negro;
+  padding-block: 0.5rem;
+  & p {
+    font-size: 0.7rem;
+  }
 }
 
 .footer_Link,

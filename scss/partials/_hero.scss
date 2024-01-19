@@ -1,4 +1,8 @@
 /**** INICIO HERO ****/
+.hero {
+  overflow: hidden;
+}
+
 .imgInicio,
 .imgNosotros,
 .imgServicios,
@@ -11,7 +15,6 @@
   margin-bottom: 1.3rem;
   background-size: cover;
   background-position: center;
-
   & h1 {
     font-size: 3rem;
     color: $color-blanco;

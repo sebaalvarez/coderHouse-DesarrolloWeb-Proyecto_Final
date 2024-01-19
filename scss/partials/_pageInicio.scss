@@ -116,13 +116,16 @@
 
 /****  Section Contacto   ****/
 .contactoSection {
-  background-image: url(../imagenes/hero-contacto.jpg);
+  background-image: url(../imagenes/body-contacto.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  & h2 {
+    text-shadow: 2px 2px 0.5px $color-blanco;
+  }
 }
 
 .contactoMap {
@@ -143,8 +146,12 @@
   text-align: center;
   margin-block: 3rem;
   & p {
-    padding: 1rem;
+    padding: 0.7rem 2rem;
     font-weight: 500;
+    color: $color-negro;
+    background-color: $color-gris-light;
+    border-radius: 20px;
+    margin-inline: 10%;
   }
 }
 
