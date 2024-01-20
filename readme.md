@@ -108,3 +108,74 @@ Se debe entregar:
         - Se modificó color de fondo y texto cuando el ítem del acordión esta activo.
 
 ---
+
+---
+
+## 3ra Pre-Entrega:
+
+Consigna:
+
+- El proyecto completo deberá visibilizarse de manera correcta en dispositivos mobile (365px), tablet y desktop (1200px). El mismo deberá estar configurado y con código SASS aplicado. Además, deberán mostrar uso de la correcta aplicación del SEO.
+
+Objetivos Generales:
+
+- Realizar la estructura final de la web.
+- Efectuar el estilo final de la web.
+- Realizar una correcta implementación de SASS.
+- Aplicar técnicas de SEO.
+- Generar la carga en un repositorio en GitHub.
+
+Formato: archivo HTML
+
+Consigna:
+
+- Realizar una estructura del HTML con buena indentación, espacios prolijos, y comentarios, siendo usados para comentar secciones y no para ocultar código. Agregar elementos HTML según necesidades de armar contenedores o elementos web determinados, a través del código del framework elegido y la documentación del mismo.
+
+Se debe entregar:
+
+- Maquetado de la web: las estructuras deben maquetar a la web en base al framework elegido, haciendo usos de clases utilitarias para armar grillas, elementos web y estilos propios del framework, además del HTML de contenido.
+- Páginas: todas las páginas deben tener el contenido estructurado y el estilo linkeado. Agregar las diferentes librerías de JavaScript y CSS pertinentes al framework.
+
+Formato: Archivo CSS, Archivos SCSS (en GitHub).
+
+Consigna:
+
+- Trasladar los estilos creados en CSS a SCSS, haciendo uso correcto del nesting, las variables y los partials de lenguaje SASS.
+- Formar un archivo de SCSS con una sintaxis correcta, dónde el código no tenga errores, tanto de CSS cómo de compilación.
+- Utilizar SASS para personalizar el framework que estás usando.
+
+Se debe entregar:
+
+- Estilo avanzado: se le mejorarán los elementos interactivos aplicando transformaciones, transiciones y/o animaciones. Transforma lo que originalmente eran estilos de CSS en SCSS. Utilizar las características de SCSS para armar estilos de CSS de forma dinámica.
+
+- Estructura de la web: Usa etiquetas no solo para armar contenido, sino para armar los elementos que van a conformar el layout de la web, los contenedores, etc.
+
+Técnicas SEO
+
+Consigna:
+
+- Implementar técnicas de SEO como meta tags description, etiqueta title, completar los alts de las imágenes y utilización de las etiquetas semánticas.
+
+Repositorio en GitHub
+
+Formato: Link al repositorio en GitHub donde está hosteado el proyecto.
+
+Consigna:
+
+- Utilizar Git de forma correcta para versionar el proyecto. Hacer uso de GitHub para brindar acceso al proyecto versionado.
+
+Se debe entregar:
+
+- Enviar al repositorio todos los archivos necesarios para visualizar correctamente la web.
+- Utilizar .gitignore para evitar enviar archivos irrelevantes para la presentación.
+- En el repositorio se muestran los commit realizados para actualizar/versionar el código.
+
+---
+
+---
+
+## Entrega Proyecto Final:
+
+Consigna:
+
+- Deberás entregar la versión final de tu sitio cargada al servidor con acceso desde la web, aplicando cada una de las características vistas en el transcurso del curso: HTML, CSS, aplicación de framework y SEO, correspondiente a la entrega final de tu proyecto.
