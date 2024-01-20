@@ -160,6 +160,7 @@ footer hr {
   font-size: 3rem;
   color: #fff;
   text-shadow: 0 0 10px #000;
+  padding-inline: 1rem;
 }
 .imgInicio p,
 .imgNosotros p,
@@ -171,6 +172,8 @@ footer hr {
   font-weight: 500;
   color: #fff;
   text-shadow: 0 0 10px #000;
+  padding-inline: 1rem;
+  text-align: center;
 }
 
 /**** FIN HERO ****/
@@ -287,7 +290,7 @@ ul {
 
 /****  Section Extracto   ****/
 .extractoSection {
-  background-image: url(../imagenes/hero4.jpg);
+  background-image: url(../imagenes/fondoExtracto.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -296,7 +299,7 @@ ul {
   text-align: center;
   font-size: 1.3rem;
   color: #fff;
-  text-shadow: 0 0 5px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /****  Section Equipo   ****/

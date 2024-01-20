@@ -19,6 +19,7 @@
     font-size: 3rem;
     color: $color-blanco;
     text-shadow: 0 0 10px $color-negro;
+    padding-inline: 1rem;
   }
 
   & p {
@@ -27,6 +28,8 @@
     font-weight: 500;
     color: $color-blanco;
     text-shadow: 0 0 10px $color-negro;
+    padding-inline: 1rem;
+    text-align: center;
   }
 
   animation-name: zoomHero;
